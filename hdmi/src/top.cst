@@ -1,0 +1,13 @@
+IO_LOC "tmds_data_p[0]" 71;
+IO_PORT "tmds_data_p[0]" IO_TYPE=LVCMOS33D PULL_MODE=NONE;
+IO_LOC "tmds_data_p[1]" 73;
+IO_PORT "tmds_data_p[1]" IO_TYPE=LVCMOS33D PULL_MODE=NONE;
+IO_LOC "tmds_data_p[2]" 75;
+IO_PORT "tmds_data_p[2]" IO_TYPE=LVCMOS33D PULL_MODE=NONE;
+IO_LOC "tmds_clk_p" 69;
+IO_PORT "tmds_clk_p" IO_TYPE=LVCMOS33D PULL_MODE=NONE;
+
+IO_LOC "rst_n" 4;
+IO_PORT "rst_n" PULL_MODE=UP;
+IO_LOC "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP;

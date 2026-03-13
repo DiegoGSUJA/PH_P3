@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Lut="10" T_Register="97(0)" T_Alu="69(0)" T_Lut="293(10)">
+ <SubModule name="u_pull"/>
+ <SubModule name="d_pull"/>
+ <SubModule name="sync_gen_inst" Register="24" Lut="54" T_Register="24(24)" T_Lut="54(54)"/>
+ <SubModule name="hdmi" Register="73" Alu="69" Lut="229" T_Register="73(73)" T_Alu="69(69)" T_Lut="229(229)"/>
+</Module>

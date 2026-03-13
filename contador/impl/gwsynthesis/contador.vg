@@ -1,0 +1,222 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.01 (64-bit)"
+//Thu Mar 12 10:07:34 2026
+
+//Source file index table:
+//file0 "\C:/Users/admin/Downloads/Ejemplo/Ejemplo/Documents/contador/src/top.sv.v"
+`timescale 100 ps/100 ps
+module top (
+  clk,
+  up_n,
+  down_n,
+  led
+)
+;
+input clk;
+input up_n;
+input down_n;
+output [5:0] led;
+wire clk_d;
+wire up_n_d;
+wire down_n_d;
+wire n6_4;
+wire counter_4_8;
+wire n6_1_4;
+wire down_reg;
+wire up_reg;
+wire n25_2;
+wire n25_1_1;
+wire n24_2;
+wire n24_1_1;
+wire n23_2;
+wire n23_1_1;
+wire n22_2;
+wire n22_1_1;
+wire n21_2;
+wire n21_1_0_COUT;
+wire led_d_4_4;
+wire led_d_3_4;
+wire led_d_2_4;
+wire led_d_1_4;
+wire led_d_0_4;
+wire [4:0] counter;
+wire VCC;
+wire GND;
+  IBUF clk_ibuf (
+    .O(clk_d),
+    .I(clk) 
+);
+  IBUF up_n_ibuf (
+    .O(up_n_d),
+    .I(up_n) 
+);
+  IBUF down_n_ibuf (
+    .O(down_n_d),
+    .I(down_n) 
+);
+  OBUF led_0_obuf (
+    .O(led[0]),
+    .I(led_d_0_4) 
+);
+  OBUF led_1_obuf (
+    .O(led[1]),
+    .I(led_d_1_4) 
+);
+  OBUF led_2_obuf (
+    .O(led[2]),
+    .I(led_d_2_4) 
+);
+  OBUF led_3_obuf (
+    .O(led[3]),
+    .I(led_d_3_4) 
+);
+  OBUF led_4_obuf (
+    .O(led[4]),
+    .I(led_d_4_4) 
+);
+  TBUF led_5_s0 (
+    .O(led[5]),
+    .I(GND),
+    .OEN(VCC) 
+);
+  LUT2 n6_s0 (
+    .F(n6_4),
+    .I0(up_n_d),
+    .I1(up_reg) 
+);
+defparam n6_s0.INIT=4'h4;
+  LUT4 counter_4_s3 (
+    .F(counter_4_8),
+    .I0(down_n_d),
+    .I1(down_reg),
+    .I2(up_n_d),
+    .I3(up_reg) 
+);
+defparam counter_4_s3.INIT=16'h4F44;
+  LUT2 n6_1_s1 (
+    .F(n6_1_4),
+    .I0(up_n_d),
+    .I1(up_reg) 
+);
+defparam n6_1_s1.INIT=4'hB;
+  DFF down_reg_s0 (
+    .Q(down_reg),
+    .D(down_n_d),
+    .CLK(clk_d) 
+);
+  DFF up_reg_s0 (
+    .Q(up_reg),
+    .D(up_n_d),
+    .CLK(clk_d) 
+);
+  DFFE counter_4_s1 (
+    .Q(counter[4]),
+    .D(n21_2),
+    .CLK(clk_d),
+    .CE(counter_4_8) 
+);
+defparam counter_4_s1.INIT=1'b0;
+  DFFE counter_3_s1 (
+    .Q(counter[3]),
+    .D(n22_2),
+    .CLK(clk_d),
+    .CE(counter_4_8) 
+);
+defparam counter_3_s1.INIT=1'b0;
+  DFFE counter_2_s1 (
+    .Q(counter[2]),
+    .D(n23_2),
+    .CLK(clk_d),
+    .CE(counter_4_8) 
+);
+defparam counter_2_s1.INIT=1'b0;
+  DFFE counter_1_s1 (
+    .Q(counter[1]),
+    .D(n24_2),
+    .CLK(clk_d),
+    .CE(counter_4_8) 
+);
+defparam counter_1_s1.INIT=1'b0;
+  DFFE counter_0_s1 (
+    .Q(counter[0]),
+    .D(n25_2),
+    .CLK(clk_d),
+    .CE(counter_4_8) 
+);
+defparam counter_0_s1.INIT=1'b0;
+  ALU n25_1_s (
+    .SUM(n25_2),
+    .COUT(n25_1_1),
+    .I0(counter[0]),
+    .I1(VCC),
+    .I3(n6_4),
+    .CIN(n6_1_4) 
+);
+defparam n25_1_s.ALU_MODE=2;
+  ALU n24_1_s (
+    .SUM(n24_2),
+    .COUT(n24_1_1),
+    .I0(counter[1]),
+    .I1(GND),
+    .I3(n6_4),
+    .CIN(n25_1_1) 
+);
+defparam n24_1_s.ALU_MODE=2;
+  ALU n23_1_s (
+    .SUM(n23_2),
+    .COUT(n23_1_1),
+    .I0(counter[2]),
+    .I1(GND),
+    .I3(n6_4),
+    .CIN(n24_1_1) 
+);
+defparam n23_1_s.ALU_MODE=2;
+  ALU n22_1_s (
+    .SUM(n22_2),
+    .COUT(n22_1_1),
+    .I0(counter[3]),
+    .I1(GND),
+    .I3(n6_4),
+    .CIN(n23_1_1) 
+);
+defparam n22_1_s.ALU_MODE=2;
+  ALU n21_1_s (
+    .SUM(n21_2),
+    .COUT(n21_1_0_COUT),
+    .I0(counter[4]),
+    .I1(GND),
+    .I3(n6_4),
+    .CIN(n22_1_1) 
+);
+defparam n21_1_s.ALU_MODE=2;
+  INV led_d_4_s0 (
+    .O(led_d_4_4),
+    .I(counter[4]) 
+);
+  INV led_d_3_s0 (
+    .O(led_d_3_4),
+    .I(counter[3]) 
+);
+  INV led_d_2_s0 (
+    .O(led_d_2_4),
+    .I(counter[2]) 
+);
+  INV led_d_1_s0 (
+    .O(led_d_1_4),
+    .I(counter[1]) 
+);
+  INV led_d_0_s0 (
+    .O(led_d_0_4),
+    .I(counter[0]) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* top */

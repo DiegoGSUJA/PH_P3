@@ -1,0 +1,54 @@
+[
+ {
+  "InstFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/top.sv",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/top.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/top.sv",
+    "InstLine" : 23,
+    "InstName" : "u_pull",
+    "ModuleFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/gowin_rpll/gowin_rpll.v",
+    "ModuleLine" : 11,
+    "ModuleName" : "ser_gen"
+   },
+   {
+    "InstFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/top.sv",
+    "InstLine" : 28,
+    "InstName" : "d_pull",
+    "ModuleFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/gowin_clkdiv/gowin_clkdiv.v",
+    "ModuleLine" : 11,
+    "ModuleName" : "pixel_gen"
+   },
+   {
+    "InstFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/top.sv",
+    "InstLine" : 36,
+    "InstName" : "sync_gen_inst",
+    "ModuleFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/sync_gen.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "sync_gen"
+   },
+   {
+    "InstFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/top.sv",
+    "InstLine" : 64,
+    "InstName" : "hdmi",
+    "ModuleFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/dvi_tx/dvi_tx.v",
+    "ModuleLine" : 1073,
+    "ModuleName" : "DVI_TX_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/dvi_tx/dvi_tx.v",
+      "InstLine" : 1104,
+      "InstName" : "rgb2dvi_inst",
+      "ModuleFile" : "C:/Users/admin/Downloads/varios/knight_rider/Documents/hdmi/src/dvi_tx/dvi_tx.v",
+      "ModuleLine" : 11,
+      "ModuleName" : "~rgb2dvi.DVI_TX_Top"
+     }
+    ]
+   }
+  ]
+ }
+]
