@@ -1,0 +1,17 @@
+-d C:\Users\admin\Desktop\Apartado4\impl\gwsynthesis\Ejemplo.vg
+-p GW1NR-9C-QFN88P-6
+-pn GW1NR-LV9QN88PC6/I5
+-cst C:\Users\admin\Desktop\Apartado4\src\top.cst
+-cfg C:\Users\admin\Desktop\Apartado4\impl\pnr\device.cfg
+-sdc C:\Users\admin\Desktop\Apartado4\src\Ejemplo.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
