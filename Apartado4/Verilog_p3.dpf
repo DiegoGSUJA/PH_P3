@@ -1,0 +1,10 @@
+---
+# Note: The contents of this file are automatically generated.
+# Any changes made by hand may be overwritten.
+version: '0.2'
+work_dir: C:\Users\admin\Desktop\Ejemplo
+design_root_dir: C:\Users\admin\Desktop\Ejemplo
+simulations: []
+source_files: [src/top.sv, src/tb_top.sv]
+library_search_paths:
+  - $STD_LIBS\ieee93
