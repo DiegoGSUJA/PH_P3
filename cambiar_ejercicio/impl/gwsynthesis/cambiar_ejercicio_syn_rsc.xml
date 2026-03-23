@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="3" Lut="25" T_Register="496(3)" T_Alu="352(0)" T_Lut="1089(25)">
+ <SubModule name="db_izq" Register="22" Alu="19" Lut="10" T_Register="22(22)" T_Alu="19(19)" T_Lut="10(10)"/>
+ <SubModule name="db_der" Register="22" Alu="19" Lut="10" T_Register="22(22)" T_Alu="19(19)" T_Lut="10(10)"/>
+ <SubModule name="cp" Register="34" Lut="64" T_Register="34(34)" T_Lut="64(64)"/>
+ <SubModule name="ej_r" Register="39" Alu="31" Lut="20" T_Register="39(39)" T_Alu="31(31)" T_Lut="20(20)"/>
+ <SubModule name="ej_c" Register="8" Alu="6" Lut="7" T_Register="8(8)" T_Alu="6(6)" T_Lut="7(7)"/>
+ <SubModule name="ej_m" Register="27" Lut="49" T_Register="27(27)" T_Lut="49(49)"/>
+ <SubModule name="ej_a" Register="40" Alu="23" Lut="10" T_Register="40(40)" T_Alu="23(23)" T_Lut="10(10)"/>
+ <SubModule name="ej_p" Lut="2" T_Register="301(0)" T_Alu="254(0)" T_Lut="894(2)">
+  <SubModule name="clk_serial"/>
+  <SubModule name="clk_pixel"/>
+  <SubModule name="sync_gen_inst" Register="48" Lut="74" T_Register="48(48)" T_Lut="74(74)"/>
+  <SubModule name="escena_inst" Register="180" Alu="185" Lut="589" T_Register="180(180)" T_Alu="185(185)" T_Lut="589(589)"/>
+  <SubModule name="hdmi_tx" Register="73" Alu="69" Lut="229" T_Register="73(73)" T_Alu="69(69)" T_Lut="229(229)"/>
+ </SubModule>
+</Module>

@@ -1,0 +1,2571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\contador_pulso.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\debouncer.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\aleatorio.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\contar.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\maquina.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\dvi_tx\dvi_tx.v<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\escena.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\gowin_clkdiv\gowin_clkdiv.v<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\gowin_rpll\gowin_rpll.v<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\marcador.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\pong.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\sync_gen.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\rider.sv<br>
+C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\top.sv<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Tool Version</td>
+<td>V1.9.11.03 Education</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW1NR-LV9QN88PC6/I5</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW1NR-9</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>C</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Mon Mar 23 17:39:44 2026
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2025 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>top</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.162s, Peak memory usage = 308.266MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.036s, Peak memory usage = 308.266MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.021s, Peak memory usage = 308.266MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.078s, Peak memory usage = 308.266MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.017s, Peak memory usage = 308.266MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.005s, Peak memory usage = 308.266MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 308.266MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.007s, Peak memory usage = 308.266MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.078s, Peak memory usage = 308.266MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.024s, Peak memory usage = 308.266MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.027s, Peak memory usage = 308.266MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 308.266MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.14s, Elapsed time = 0h 0m 0.135s, Peak memory usage = 308.266MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.091s, Peak memory usage = 308.266MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 308.266MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>17</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>3</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspELVDS_OBUF</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>496</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
+<td>70</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>30</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
+<td>33</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>72</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>30</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
+<td>122</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>131</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>1052</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>142</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>217</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>693</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>352</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>352</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>37</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>37</td>
+</tr>
+<tr>
+<td class="label"><b>IOLOGIC </b></td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER10</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspCLKDIV</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsprPLL</td>
+<td>1</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>1441(1089 LUT, 352 ALU) / 8640</td>
+<td>17%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>496 / 6693</td>
+<td>8%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>0 / 6693</td>
+<td>0%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>496 / 6693</td>
+<td>8%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>0 / 26</td>
+<td>0%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk</td>
+<td>Base</td>
+<td>37.037</td>
+<td>27.000</td>
+<td>0.000</td>
+<td>18.519</td>
+<td> </td>
+<td> </td>
+<td>clk_ibuf/I </td>
+</tr>
+<tr>
+<td>2</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>2.694</td>
+<td>371.250</td>
+<td>0.000</td>
+<td>1.347</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>3</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>2.694</td>
+<td>371.250</td>
+<td>0.000</td>
+<td>1.347</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUTP </td>
+</tr>
+<tr>
+<td>4</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>5.387</td>
+<td>185.625</td>
+<td>0.000</td>
+<td>2.694</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUTD </td>
+</tr>
+<tr>
+<td>5</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>8.081</td>
+<td>123.750</td>
+<td>0.000</td>
+<td>4.040</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUTD3 </td>
+</tr>
+<tr>
+<td>6</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>13.468</td>
+<td>74.250</td>
+<td>0.000</td>
+<td>6.734</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUT</td>
+<td>ej_p/clk_serial/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk</td>
+<td>27.000(MHz)</td>
+<td>57.943(MHz)</td>
+<td>9</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+<td>74.250(MHz)</td>
+<td>46.635(MHz)</td>
+<td>13</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.975</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>22.496</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.521</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>ej_p/escena_inst/j2_y_12_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.727</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>1.453</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.911</td>
+<td>0.458</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>4</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/Q</td>
+</tr>
+<tr>
+<td>2.871</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n272_s2/I0</td>
+</tr>
+<tr>
+<td>3.903</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n272_s2/F</td>
+</tr>
+<tr>
+<td>4.863</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n463_s/CIN</td>
+</tr>
+<tr>
+<td>5.426</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n463_s/SUM</td>
+</tr>
+<tr>
+<td>6.386</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/I2</td>
+</tr>
+<tr>
+<td>7.208</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/F</td>
+</tr>
+<tr>
+<td>8.168</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/I0</td>
+</tr>
+<tr>
+<td>9.200</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/F</td>
+</tr>
+<tr>
+<td>10.160</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/I2</td>
+</tr>
+<tr>
+<td>10.982</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/F</td>
+</tr>
+<tr>
+<td>11.942</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/I0</td>
+</tr>
+<tr>
+<td>12.974</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/F</td>
+</tr>
+<tr>
+<td>13.934</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/I0</td>
+</tr>
+<tr>
+<td>14.966</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/F</td>
+</tr>
+<tr>
+<td>15.926</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s1/I0</td>
+</tr>
+<tr>
+<td>16.958</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>ej_p/escena_inst/n482_103_s1/F</td>
+</tr>
+<tr>
+<td>17.918</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s0/I0</td>
+</tr>
+<tr>
+<td>18.950</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>12</td>
+<td>ej_p/escena_inst/n482_103_s0/F</td>
+</tr>
+<tr>
+<td>19.910</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n592_1_s/I3</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.550</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>ej_p/escena_inst/n592_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>ej_p/escena_inst/n591_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n591_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n590_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n590_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n589_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n589_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n588_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n588_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n587_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n587_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n586_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.802</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n586_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.802</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n585_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.859</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n585_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.859</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n584_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.916</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n584_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.916</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n583_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.973</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n583_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.973</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n582_1_s/CIN</td>
+</tr>
+<tr>
+<td>21.536</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n582_1_s/SUM</td>
+</tr>
+<tr>
+<td>22.496</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_12_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>14.195</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>14.921</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_12_s0/CLK</td>
+</tr>
+<tr>
+<td>14.521</td>
+<td>-0.400</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_12_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 10.025, 47.640%; route: 10.560, 50.182%; tC2Q: 0.458, 2.178%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.918</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>22.439</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.521</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>ej_p/escena_inst/j2_y_11_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.727</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>1.453</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.911</td>
+<td>0.458</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>4</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/Q</td>
+</tr>
+<tr>
+<td>2.871</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n272_s2/I0</td>
+</tr>
+<tr>
+<td>3.903</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n272_s2/F</td>
+</tr>
+<tr>
+<td>4.863</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n463_s/CIN</td>
+</tr>
+<tr>
+<td>5.426</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n463_s/SUM</td>
+</tr>
+<tr>
+<td>6.386</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/I2</td>
+</tr>
+<tr>
+<td>7.208</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/F</td>
+</tr>
+<tr>
+<td>8.168</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/I0</td>
+</tr>
+<tr>
+<td>9.200</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/F</td>
+</tr>
+<tr>
+<td>10.160</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/I2</td>
+</tr>
+<tr>
+<td>10.982</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/F</td>
+</tr>
+<tr>
+<td>11.942</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/I0</td>
+</tr>
+<tr>
+<td>12.974</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/F</td>
+</tr>
+<tr>
+<td>13.934</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/I0</td>
+</tr>
+<tr>
+<td>14.966</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/F</td>
+</tr>
+<tr>
+<td>15.926</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s1/I0</td>
+</tr>
+<tr>
+<td>16.958</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>ej_p/escena_inst/n482_103_s1/F</td>
+</tr>
+<tr>
+<td>17.918</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s0/I0</td>
+</tr>
+<tr>
+<td>18.950</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>12</td>
+<td>ej_p/escena_inst/n482_103_s0/F</td>
+</tr>
+<tr>
+<td>19.910</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n592_1_s/I3</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.550</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>ej_p/escena_inst/n592_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>ej_p/escena_inst/n591_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n591_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n590_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n590_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n589_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n589_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n588_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n588_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n587_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n587_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n586_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.802</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n586_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.802</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n585_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.859</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n585_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.859</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n584_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.916</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n584_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.916</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n583_1_s/CIN</td>
+</tr>
+<tr>
+<td>21.479</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n583_1_s/SUM</td>
+</tr>
+<tr>
+<td>22.439</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_11_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>14.195</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>14.921</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_11_s0/CLK</td>
+</tr>
+<tr>
+<td>14.521</td>
+<td>-0.400</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_11_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 9.968, 47.498%; route: 10.560, 50.318%; tC2Q: 0.458, 2.184%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.861</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>22.382</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.521</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>ej_p/escena_inst/j2_y_10_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.727</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>1.453</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.911</td>
+<td>0.458</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>4</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/Q</td>
+</tr>
+<tr>
+<td>2.871</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n272_s2/I0</td>
+</tr>
+<tr>
+<td>3.903</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n272_s2/F</td>
+</tr>
+<tr>
+<td>4.863</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n463_s/CIN</td>
+</tr>
+<tr>
+<td>5.426</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n463_s/SUM</td>
+</tr>
+<tr>
+<td>6.386</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/I2</td>
+</tr>
+<tr>
+<td>7.208</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/F</td>
+</tr>
+<tr>
+<td>8.168</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/I0</td>
+</tr>
+<tr>
+<td>9.200</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/F</td>
+</tr>
+<tr>
+<td>10.160</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/I2</td>
+</tr>
+<tr>
+<td>10.982</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/F</td>
+</tr>
+<tr>
+<td>11.942</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/I0</td>
+</tr>
+<tr>
+<td>12.974</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/F</td>
+</tr>
+<tr>
+<td>13.934</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/I0</td>
+</tr>
+<tr>
+<td>14.966</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/F</td>
+</tr>
+<tr>
+<td>15.926</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s1/I0</td>
+</tr>
+<tr>
+<td>16.958</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>ej_p/escena_inst/n482_103_s1/F</td>
+</tr>
+<tr>
+<td>17.918</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s0/I0</td>
+</tr>
+<tr>
+<td>18.950</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>12</td>
+<td>ej_p/escena_inst/n482_103_s0/F</td>
+</tr>
+<tr>
+<td>19.910</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n592_1_s/I3</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.550</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>ej_p/escena_inst/n592_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>ej_p/escena_inst/n591_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n591_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n590_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n590_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n589_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n589_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n588_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n588_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n587_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n587_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n586_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.802</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n586_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.802</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n585_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.859</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n585_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.859</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n584_1_s/CIN</td>
+</tr>
+<tr>
+<td>21.422</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n584_1_s/SUM</td>
+</tr>
+<tr>
+<td>22.382</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_10_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>14.195</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>14.921</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_10_s0/CLK</td>
+</tr>
+<tr>
+<td>14.521</td>
+<td>-0.400</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_10_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 9.911, 47.355%; route: 10.560, 50.455%; tC2Q: 0.458, 2.190%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.804</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>22.325</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.521</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>ej_p/escena_inst/j2_y_9_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.727</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>1.453</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.911</td>
+<td>0.458</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>4</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/Q</td>
+</tr>
+<tr>
+<td>2.871</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n272_s2/I0</td>
+</tr>
+<tr>
+<td>3.903</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n272_s2/F</td>
+</tr>
+<tr>
+<td>4.863</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n463_s/CIN</td>
+</tr>
+<tr>
+<td>5.426</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n463_s/SUM</td>
+</tr>
+<tr>
+<td>6.386</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/I2</td>
+</tr>
+<tr>
+<td>7.208</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/F</td>
+</tr>
+<tr>
+<td>8.168</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/I0</td>
+</tr>
+<tr>
+<td>9.200</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/F</td>
+</tr>
+<tr>
+<td>10.160</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/I2</td>
+</tr>
+<tr>
+<td>10.982</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/F</td>
+</tr>
+<tr>
+<td>11.942</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/I0</td>
+</tr>
+<tr>
+<td>12.974</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/F</td>
+</tr>
+<tr>
+<td>13.934</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/I0</td>
+</tr>
+<tr>
+<td>14.966</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/F</td>
+</tr>
+<tr>
+<td>15.926</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s1/I0</td>
+</tr>
+<tr>
+<td>16.958</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>ej_p/escena_inst/n482_103_s1/F</td>
+</tr>
+<tr>
+<td>17.918</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s0/I0</td>
+</tr>
+<tr>
+<td>18.950</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>12</td>
+<td>ej_p/escena_inst/n482_103_s0/F</td>
+</tr>
+<tr>
+<td>19.910</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n592_1_s/I3</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.550</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>ej_p/escena_inst/n592_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>ej_p/escena_inst/n591_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n591_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n590_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n590_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n589_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n589_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n588_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n588_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n587_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n587_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n586_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.802</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n586_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.802</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n585_1_s/CIN</td>
+</tr>
+<tr>
+<td>21.365</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n585_1_s/SUM</td>
+</tr>
+<tr>
+<td>22.325</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_9_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>14.195</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>14.921</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_9_s0/CLK</td>
+</tr>
+<tr>
+<td>14.521</td>
+<td>-0.400</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_9_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 9.854, 47.211%; route: 10.560, 50.593%; tC2Q: 0.458, 2.196%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.747</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>22.268</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.521</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>ej_p/escena_inst/j2_y_8_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.727</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>1.453</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.911</td>
+<td>0.458</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>4</td>
+<td>ej_p/escena_inst/pala_deadzone_0_s0/Q</td>
+</tr>
+<tr>
+<td>2.871</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n272_s2/I0</td>
+</tr>
+<tr>
+<td>3.903</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n272_s2/F</td>
+</tr>
+<tr>
+<td>4.863</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n463_s/CIN</td>
+</tr>
+<tr>
+<td>5.426</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n463_s/SUM</td>
+</tr>
+<tr>
+<td>6.386</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/I2</td>
+</tr>
+<tr>
+<td>7.208</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s17/F</td>
+</tr>
+<tr>
+<td>8.168</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/I0</td>
+</tr>
+<tr>
+<td>9.200</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s14/F</td>
+</tr>
+<tr>
+<td>10.160</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/I2</td>
+</tr>
+<tr>
+<td>10.982</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s9/F</td>
+</tr>
+<tr>
+<td>11.942</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/I0</td>
+</tr>
+<tr>
+<td>12.974</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s5/F</td>
+</tr>
+<tr>
+<td>13.934</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/I0</td>
+</tr>
+<tr>
+<td>14.966</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s2/F</td>
+</tr>
+<tr>
+<td>15.926</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s1/I0</td>
+</tr>
+<tr>
+<td>16.958</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>ej_p/escena_inst/n482_103_s1/F</td>
+</tr>
+<tr>
+<td>17.918</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n482_103_s0/I0</td>
+</tr>
+<tr>
+<td>18.950</td>
+<td>1.032</td>
+<td>tINS</td>
+<td>FF</td>
+<td>12</td>
+<td>ej_p/escena_inst/n482_103_s0/F</td>
+</tr>
+<tr>
+<td>19.910</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n592_1_s/I3</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.550</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>ej_p/escena_inst/n592_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.460</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>ej_p/escena_inst/n591_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n591_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.517</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n590_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n590_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.574</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n589_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n589_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.631</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n588_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n588_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.688</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n587_1_s/CIN</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n587_1_s/COUT</td>
+</tr>
+<tr>
+<td>20.745</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>ej_p/escena_inst/n586_1_s/CIN</td>
+</tr>
+<tr>
+<td>21.308</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/n586_1_s/SUM</td>
+</tr>
+<tr>
+<td>22.268</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_8_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>14.195</td>
+<td>0.727</td>
+<td>tCL</td>
+<td>RR</td>
+<td>305</td>
+<td>ej_p/clk_pixel/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>14.921</td>
+<td>0.726</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_8_s0/CLK</td>
+</tr>
+<tr>
+<td>14.521</td>
+<td>-0.400</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>ej_p/escena_inst/j2_y_8_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 9.797, 47.066%; route: 10.560, 50.732%; tC2Q: 0.458, 2.202%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

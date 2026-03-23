@@ -1,0 +1,54 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\contador_pulso.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\debouncer.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\aleatorio.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\contar.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\maquina.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\dvi_tx\dvi_tx.v'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\escena.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\gowin_clkdiv\gowin_clkdiv.v'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\gowin_rpll\gowin_rpll.v'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\marcador.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\pong.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\sync_gen.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\rider.sv'
+Analyzing Verilog file 'C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\top.sv'
+Compiling module 'top'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\top.sv":1)
+Compiling module 'debounce(N=540000)'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\debouncer.sv":1)
+Compiling module 'contador_pulso'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\contador_pulso.sv":1)
+Compiling module 'rider'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\rider.sv":1)
+Compiling module 'contar'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\contar.sv":1)
+Compiling module 'maquina'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\maquina.sv":1)
+Compiling module 'aleatorio'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\aleatorio.sv":1)
+Compiling module 'pong'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\pong.sv":1)
+Compiling module 'ser_gen'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\gowin_rpll\gowin_rpll.v":11)
+Compiling module 'pixel_gen'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\gowin_clkdiv\gowin_clkdiv.v":11)
+Compiling module 'sync_gen'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\sync_gen.sv":1)
+Compiling module 'escena'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\escena.sv":1)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 3("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\escena.sv":39)
+Compiling module 'marcador'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\marcador.sv":1)
+Compiling module 'DVI_TX_Top'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\dvi_tx\dvi_tx.v":1073)
+Compiling module '**'("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\dvi_tx\dvi_tx.v":1072)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "marcador" instantiated to "m1" is swept in optimizing("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\escena.sv":45)
+WARN  (NL0002) : The module "marcador" instantiated to "m2" is swept in optimizing("C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\src\ejercicios\pong\escena.sv":51)
+[95%] Generate netlist file "C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\impl\gwsynthesis\cambiar_ejercicio.vg" completed
+[100%] Generate report file "C:\Users\gabis\Desktop\UJA\PPHH\cambiar_ejercicio\impl\gwsynthesis\cambiar_ejercicio_syn.rpt.html" completed
+GowinSynthesis finish

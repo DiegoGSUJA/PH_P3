@@ -1,0 +1,69 @@
+{
+ "Device" : "GW1NR-9C",
+ "Files" : [
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/contador_pulso.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/debouncer.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/aleatorio.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/contar.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/maquina.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/dvi_tx/dvi_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/escena.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/gowin_clkdiv/gowin_clkdiv.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/gowin_rpll/gowin_rpll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/marcador.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/pong.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/sync_gen.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/rider.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

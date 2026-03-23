@@ -1,0 +1,146 @@
+[
+ {
+  "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+    "InstLine" : 12,
+    "InstName" : "db_izq",
+    "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/debouncer.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "debounce"
+   },
+   {
+    "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+    "InstLine" : 13,
+    "InstName" : "db_der",
+    "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/debouncer.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "debounce"
+   },
+   {
+    "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+    "InstLine" : 26,
+    "InstName" : "cp",
+    "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/contador_pulso.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "contador_pulso"
+   },
+   {
+    "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+    "InstLine" : 67,
+    "InstName" : "ej_r",
+    "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/rider.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "rider"
+   },
+   {
+    "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+    "InstLine" : 73,
+    "InstName" : "ej_c",
+    "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/contar.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "contar"
+   },
+   {
+    "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+    "InstLine" : 81,
+    "InstName" : "ej_m",
+    "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/maquina.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "maquina"
+   },
+   {
+    "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+    "InstLine" : 88,
+    "InstName" : "ej_a",
+    "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/aleatorio.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "aleatorio"
+   },
+   {
+    "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/top.sv",
+    "InstLine" : 95,
+    "InstName" : "ej_p",
+    "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/pong.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "pong",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/pong.sv",
+      "InstLine" : 28,
+      "InstName" : "clk_serial",
+      "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/gowin_rpll/gowin_rpll.v",
+      "ModuleLine" : 11,
+      "ModuleName" : "ser_gen"
+     },
+     {
+      "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/pong.sv",
+      "InstLine" : 33,
+      "InstName" : "clk_pixel",
+      "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/gowin_clkdiv/gowin_clkdiv.v",
+      "ModuleLine" : 11,
+      "ModuleName" : "pixel_gen"
+     },
+     {
+      "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/pong.sv",
+      "InstLine" : 44,
+      "InstName" : "sync_gen_inst",
+      "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/sync_gen.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "sync_gen"
+     },
+     {
+      "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/pong.sv",
+      "InstLine" : 55,
+      "InstName" : "escena_inst",
+      "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/escena.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "escena",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/escena.sv",
+        "InstLine" : 41,
+        "InstName" : "m1",
+        "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/marcador.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "marcador"
+       },
+       {
+        "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/escena.sv",
+        "InstLine" : 47,
+        "InstName" : "m2",
+        "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/marcador.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "marcador"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/pong.sv",
+      "InstLine" : 70,
+      "InstName" : "hdmi_tx",
+      "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/dvi_tx/dvi_tx.v",
+      "ModuleLine" : 1073,
+      "ModuleName" : "DVI_TX_Top",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/dvi_tx/dvi_tx.v",
+        "InstLine" : 1104,
+        "InstName" : "rgb2dvi_inst",
+        "ModuleFile" : "C:/Users/gabis/Desktop/UJA/PPHH/cambiar_ejercicio/src/ejercicios/pong/dvi_tx/dvi_tx.v",
+        "ModuleLine" : 11,
+        "ModuleName" : "~rgb2dvi.DVI_TX_Top"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

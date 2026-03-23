@@ -1,0 +1,25 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NR-9C" pn="GW1NR-LV9QN88PC6/I5">gw1nr9c-004</Device>
+    <FileList>
+        <File path="src/contador_pulso.sv" type="file.verilog" enable="1"/>
+        <File path="src/debouncer.sv" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/aleatorio.sv" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/contar.sv" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/maquina.sv" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/pong/dvi_tx/dvi_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/pong/escena.sv" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/pong/gowin_clkdiv/gowin_clkdiv.v" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/pong/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/pong/marcador.sv" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/pong/pong.sv" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/pong/sync_gen.sv" type="file.verilog" enable="1"/>
+        <File path="src/ejercicios/rider.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+        <File path="src/timing.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
